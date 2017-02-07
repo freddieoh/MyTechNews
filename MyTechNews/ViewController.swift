@@ -22,7 +22,7 @@ class ViewController: UIViewController {
   }
   
   func fetchArticles() {
-    let url = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=49b8797ec37f4f3cb09e95563cb19338")!)
+    let url = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=techcrunch&sortBy=latest&apiKey=49b8797ec37f4f3cb09e95563cb19338")!)
     
     URLSession.shared.dataTask(with: url) { (data,response,error) in
      
@@ -50,6 +50,10 @@ class ViewController: UIViewController {
               self.articles?.append(article)
                 }
               }
+        
+        DispatchQueue.main.async {
+          self.tableView.reloadData()
+        }
           } catch let error {
             print(error)
         }
@@ -72,8 +76,9 @@ extension ViewController: UITableViewDataSource {
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath) as! ArticleCell
     cell.articleTitleLabel.text = self.articles?[indexPath.row].headline
-    cell.articleDescriptionLabel.text = self.articles?[indexPath.row].description
-    
+    cell.articleDescriptionLabel.text = self.articles?[indexPath.row].desc
+    cell.articleAuthorLabel.text = self.articles?[indexPath.row].author
+    cell.imageView?.downloadImage(from: (self.articles?[indexPath.row].imageURL!)!)
 
     return cell
     
@@ -88,4 +93,27 @@ extension ViewController: UITableViewDataSource {
     return self.articles?.count ?? 0
   }
   
+}
+
+extension UIImageView {
+  
+  func downloadImage(from url: String) {
+    
+    let url = URLRequest(url: URL(string: url)!)
+    let task = URLSession.shared.dataTask(with: url) { (data,respone,error) in
+    
+      if error != nil {
+        print(error.debugDescription)
+        return
+      }
+      
+      
+      DispatchQueue.main.async {
+        self.image = UIImage(data: data!)
+      }
+    }
+    
+    task.resume()
+    
+  }
 }
