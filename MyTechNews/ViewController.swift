@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
   @IBOutlet weak var tableView: UITableView!
   
   var articles: [Article]? = []
@@ -25,18 +25,17 @@ class ViewController: UIViewController {
     let url = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=techcrunch&sortBy=latest&apiKey=49b8797ec37f4f3cb09e95563cb19338")!)
     
     URLSession.shared.dataTask(with: url) { (data,response,error) in
-     
-      self.articles = [Article]()
-     
-      do {
-      let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
       
+      self.articles = [Article]()
+      
+      do {
+        let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
+        
         if let articlesFromJSON = json?["articles"] as? [[String:Any]] {
           
           for articles in articlesFromJSON {
-           
-            let article = Article()
             
+            let article = Article()
             
             if let title = articles["title"] as? String, let author = articles["author"] as? String, let desc = articles["description"] as? String, let url = articles["url"] as? String, let urlToImage = articles["urlToImage"] as? String {
               
@@ -45,30 +44,27 @@ class ViewController: UIViewController {
               article.desc = desc
               article.url = url
               article.imageURL = urlToImage
-              }
-              
-              self.articles?.append(article)
-                }
-              }
+            }
+            self.articles?.append(article)
+          }
+        }
         
         DispatchQueue.main.async {
           self.tableView.reloadData()
         }
-          } catch let error {
-            print(error)
-        }
+      } catch let error {
+        print(error)
+      }
     }.resume()
   }
-
+  
 }
-
 
 // MARK: UITableViewDelegate
 
 extension ViewController: UITableViewDelegate {
   
 }
-
 
 // MARK: UITableViewDataSource
 extension ViewController: UITableViewDataSource {
@@ -79,7 +75,7 @@ extension ViewController: UITableViewDataSource {
     cell.articleDescriptionLabel.text = self.articles?[indexPath.row].desc
     cell.articleAuthorLabel.text = self.articles?[indexPath.row].author
     cell.imageView?.downloadImage(from: (self.articles?[indexPath.row].imageURL!)!)
-
+    
     return cell
     
   }
@@ -92,8 +88,9 @@ extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.articles?.count ?? 0
   }
-  
 }
+
+// MARK: UIImageView
 
 extension UIImageView {
   
@@ -101,12 +98,11 @@ extension UIImageView {
     
     let url = URLRequest(url: URL(string: url)!)
     let task = URLSession.shared.dataTask(with: url) { (data,respone,error) in
-    
+      
       if error != nil {
         print(error.debugDescription)
         return
       }
-      
       
       DispatchQueue.main.async {
         self.image = UIImage(data: data!)

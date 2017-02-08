@@ -16,7 +16,4 @@ class Article: NSObject {
   var url: String?
   var imageURL: String?
 
-
-  
-  
 }
