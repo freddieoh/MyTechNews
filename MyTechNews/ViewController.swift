@@ -74,7 +74,7 @@ extension ViewController: UITableViewDataSource {
     cell.articleTitleLabel.text = self.articles?[indexPath.row].headline
     cell.articleDescriptionLabel.text = self.articles?[indexPath.row].desc
     cell.articleAuthorLabel.text = self.articles?[indexPath.row].author
-    cell.imageView?.downloadImage(from: (self.articles?[indexPath.row].imageURL!)!)
+    cell.articleImageView?.downloadImage(from: (self.articles?[indexPath.row].imageURL!)!)
     
     return cell
     
