@@ -29,7 +29,13 @@
                                         <rect key="frame" x="0.0" y="10" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <items>
-                                            <navigationItem title="News Reader" id="Zp0-9g-LSc"/>
+                                            <navigationItem title="News Reader" id="Zp0-9g-LSc">
+                                                <barButtonItem key="leftBarButtonItem" title="Menu" id="EyE-Co-8Pf">
+                                                    <connections>
+                                                        <action selector="menuButtonPressed:" destination="BYZ-38-t0r" id="gSd-1V-EJw"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
                                         </items>
                                     </navigationBar>
                                 </subviews>

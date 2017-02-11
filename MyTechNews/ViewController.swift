@@ -14,6 +14,8 @@ class ViewController: UIViewController {
   
   var articles: [Article]? = []
   
+  let menuManager = MenuManager()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -97,6 +99,12 @@ extension ViewController: UITableViewDataSource {
     
     self.present(webVC, animated: true, completion: nil)
   }
+  
+  @IBAction func menuButtonPressed(_ sender: Any) {
+  
+    menuManager.openMenu()
+  }
+
 }
 
 // MARK: UIImageView
