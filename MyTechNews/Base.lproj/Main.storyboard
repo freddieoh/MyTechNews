@@ -125,7 +125,7 @@
         <!--Web View View Controller-->
         <scene sceneID="0Wy-Hu-hPu">
             <objects>
-                <viewController id="0kK-kY-0ht" customClass="WebViewViewController" customModule="MyTechNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="web" id="0kK-kY-0ht" customClass="WebViewViewController" customModule="MyTechNews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3fO-43-JAo"/>
                         <viewControllerLayoutGuide type="bottom" id="xVA-2a-Itm"/>
