@@ -16,6 +16,8 @@
 		1F11AE9B1E48FC5D001D161A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11AE9A1E48FC5D001D161A /* Article.swift */; };
 		1F25F6861E4E844000E28F59 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25F6851E4E844000E28F59 /* WebViewViewController.swift */; };
 		1F25F6881E4E9CE700E28F59 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25F6871E4E9CE700E28F59 /* MenuManager.swift */; };
+		1F47A9FF1E522BD80005505C /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F47A9FE1E522BD80005505C /* BaseCell.xib */; };
+		1F47AA011E5236470005505C /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F47AA001E5236470005505C /* BaseViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1F11AE9A1E48FC5D001D161A /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		1F25F6851E4E844000E28F59 /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		1F25F6871E4E9CE700E28F59 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		1F47A9FE1E522BD80005505C /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BaseCell.xib; path = ../BaseCell.xib; sourceTree = "<group>"; };
+		1F47AA001E5236470005505C /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewCell.swift; path = ../BaseViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				1F11AE981E48FB22001D161A /* ArticleCell.swift */,
+				1F47AA001E5236470005505C /* BaseViewCell.swift */,
+				1F47A9FE1E522BD80005505C /* BaseCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F47A9FF1E522BD80005505C /* BaseCell.xib in Resources */,
 				1F11AE8D1E48F4FB001D161A /* LaunchScreen.storyboard in Resources */,
 				1F11AE8A1E48F4FB001D161A /* Assets.xcassets in Resources */,
 				1F11AE881E48F4FB001D161A /* Main.storyboard in Resources */,
@@ -182,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F25F6881E4E9CE700E28F59 /* MenuManager.swift in Sources */,
+				1F47AA011E5236470005505C /* BaseViewCell.swift in Sources */,
 				1F25F6861E4E844000E28F59 /* WebViewViewController.swift in Sources */,
 				1F11AE9B1E48FC5D001D161A /* Article.swift in Sources */,
 				1F11AE851E48F4FB001D161A /* ViewController.swift in Sources */,

@@ -13,18 +13,19 @@ class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
   var articles: [Article]? = []
+  var source = "techcrunch"
   
   let menuManager = MenuManager()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    fetchArticles()
+    fetchArticles(fromSource: source)
     
   }
   
-  func fetchArticles() {
-    let url = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=techcrunch&sortBy=latest&apiKey=49b8797ec37f4f3cb09e95563cb19338")!)
+  func fetchArticles(fromSource provider: String) {
+    let url = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=\(provider)&sortBy=latest&apiKey=49b8797ec37f4f3cb09e95563cb19338")!)
     
     URLSession.shared.dataTask(with: url) { (data,response,error) in
       
@@ -103,6 +104,7 @@ extension ViewController: UITableViewDataSource {
   @IBAction func menuButtonPressed(_ sender: Any) {
   
     menuManager.openMenu()
+    menuManager.mainVC = self
   }
 
 }
