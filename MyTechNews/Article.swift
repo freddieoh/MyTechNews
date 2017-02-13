@@ -15,5 +15,4 @@ class Article: NSObject {
   var author: String?
   var url: String?
   var imageURL: String?
-
 }

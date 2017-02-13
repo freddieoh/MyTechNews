@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     fetchArticles(fromSource: source)
-    
   }
   
   func fetchArticles(fromSource provider: String) {
@@ -51,7 +50,7 @@ class ViewController: UIViewController {
             self.articles?.append(article)
           }
         }
-        
+
         DispatchQueue.main.async {
           self.tableView.reloadData()
         }
@@ -60,13 +59,10 @@ class ViewController: UIViewController {
       }
     }.resume()
   }
-  
 }
-
 // MARK: UITableViewDelegate
 
 extension ViewController: UITableViewDelegate {
-  
 }
 
 // MARK: UITableViewDataSource
@@ -80,18 +76,15 @@ extension ViewController: UITableViewDataSource {
     cell.articleImageView?.downloadImage(from: (self.articles?[indexPath.row].imageURL!)!)
     
     return cell
-    
   }
   
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
-    
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.articles?.count ?? 0
   }
-  
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let webVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "web") as! WebViewViewController
@@ -106,7 +99,6 @@ extension ViewController: UITableViewDataSource {
     menuManager.openMenu()
     menuManager.mainVC = self
   }
-
 }
 
 // MARK: UIImageView
@@ -127,7 +119,6 @@ extension UIImageView {
         self.image = UIImage(data: data!)
       }
     }
-    
     task.resume()
   }
 }

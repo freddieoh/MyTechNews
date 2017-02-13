@@ -64,7 +64,6 @@ class MenuManager: NSObject, UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 50
-    
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -72,11 +71,8 @@ class MenuManager: NSObject, UITableViewDataSource, UITableViewDelegate {
       vc.source = arrayOfSources[indexPath.item].lowercased()
       vc.fetchArticles(fromSource: arrayOfSources[indexPath.item].lowercased())
       dismissMenu()
-      
     }
-    
   }
-
   override init() {
     super.init()
     
@@ -87,6 +83,5 @@ class MenuManager: NSObject, UITableViewDataSource, UITableViewDelegate {
     menuTableView.bounces = true
     
     menuTableView.register(BaseViewCell.classForCoder(), forCellReuseIdentifier: "CellId")
-    
   }
 }
