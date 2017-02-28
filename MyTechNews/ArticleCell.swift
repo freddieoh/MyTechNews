@@ -10,7 +10,6 @@ import UIKit
 
 class ArticleCell: UITableViewCell {
   
-  
   @IBOutlet weak var articleImageView: UIImageView!
   @IBOutlet weak var articleTitleLabel: UILabel!
   @IBOutlet weak var articleDescriptionLabel: UILabel!
@@ -18,8 +17,8 @@ class ArticleCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-
   }
+  
   override func setSelected(_ selected: Bool, animated: Bool) {
     super.setSelected(selected, animated: animated)
   }

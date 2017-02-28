@@ -17,4 +17,7 @@ class WebViewViewController: UIViewController {
       webView.loadRequest(URLRequest(url: URL(string: url!)!))
 
     }
+  
+  @IBOutlet weak var backButtonPressed: UIBarButtonItem! 
+  
 }

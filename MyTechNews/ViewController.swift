@@ -27,20 +27,14 @@ class ViewController: UIViewController {
     let url = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=\(provider)&sortBy=latest&apiKey=49b8797ec37f4f3cb09e95563cb19338")!)
     
     URLSession.shared.dataTask(with: url) { (data,response,error) in
-      
       self.articles = [Article]()
-      
       do {
         let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
         
         if let articlesFromJSON = json?["articles"] as? [[String:Any]] {
-          
           for articles in articlesFromJSON {
-            
             let article = Article()
-            
             if let title = articles["title"] as? String, let author = articles["author"] as? String, let desc = articles["description"] as? String, let url = articles["url"] as? String, let urlToImage = articles["urlToImage"] as? String {
-              
               article.author = author
               article.headline = title
               article.desc = desc
@@ -63,6 +57,7 @@ class ViewController: UIViewController {
 // MARK: UITableViewDelegate
 
 extension ViewController: UITableViewDelegate {
+
 }
 
 // MARK: UITableViewDataSource
@@ -88,14 +83,11 @@ extension ViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let webVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "web") as! WebViewViewController
-   
     webVC.url = self .articles?[indexPath.item].url
-    
     self.present(webVC, animated: true, completion: nil)
   }
   
   @IBAction func menuButtonPressed(_ sender: Any) {
-  
     menuManager.openMenu()
     menuManager.mainVC = self
   }
@@ -106,15 +98,12 @@ extension ViewController: UITableViewDataSource {
 extension UIImageView {
   
   func downloadImage(from url: String) {
-    
     let url = URLRequest(url: URL(string: url)!)
     let task = URLSession.shared.dataTask(with: url) { (data,respone,error) in
-      
       if error != nil {
         print(error.debugDescription)
         return
       }
-      
       DispatchQueue.main.async {
         self.image = UIImage(data: data!)
       }
