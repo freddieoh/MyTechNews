@@ -131,12 +131,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6e-oe-Phw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ll-yy-bxn">
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ll-yy-bxn">
                                         <rect key="frame" x="0.0" y="10" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <items>
                                             <navigationItem title="MyTechNews" id="gXM-Cl-3sV">
-                                                <barButtonItem key="leftBarButtonItem" title="Back" id="48s-dA-nBY"/>
+                                                <barButtonItem key="leftBarButtonItem" title="Back" id="rOL-TU-m2V">
+                                                    <connections>
+                                                        <action selector="backButtonPressed:" destination="0kK-kY-0ht" id="WKf-Bc-oYg"/>
+                                                    </connections>
+                                                </barButtonItem>
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
@@ -161,7 +165,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButtonPressed" destination="48s-dA-nBY" id="igt-W6-lLO"/>
                         <outlet property="webView" destination="cd1-UJ-SkL" id="Ieo-Wm-Wsg"/>
                     </connections>
                 </viewController>

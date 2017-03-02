@@ -15,9 +15,11 @@ class WebViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       webView.loadRequest(URLRequest(url: URL(string: url!)!))
-
     }
+
+  @IBAction func backButtonPressed(_ sender: Any) {
+    self.dismiss(animated: true, completion: nil)
+  }
   
-  @IBOutlet weak var backButtonPressed: UIBarButtonItem! 
   
 }
