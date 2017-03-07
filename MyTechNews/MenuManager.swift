@@ -12,7 +12,7 @@ class MenuManager: NSObject, UITableViewDataSource, UITableViewDelegate {
   
   let blackView = UIView()
   let menuTableView = UITableView()
-  let arrayOfSources = ["TechCrunch","TechRadar","Engadget","The-Verge","Wired-de"]
+  let arrayOfSources = ["TechCrunch","TechRadar","Engadget"]
   var mainVC: ViewController?
 
   public func openMenu() {
