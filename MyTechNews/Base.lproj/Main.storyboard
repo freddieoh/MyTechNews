@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oSZ-gS-obJ">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MyTechNews-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyTechNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="242" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VHI-Db-dtC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="692" id="CdJ-bH-2rb"/>
+                                    <constraint firstAttribute="height" constant="736" id="CdJ-bH-2rb"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" rowHeight="242" id="o0q-Qs-l5e" customClass="ArticleCell" customModule="MyTechNews" customModuleProvider="target">
@@ -53,14 +53,14 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-gA-VmT">
                                                     <rect key="frame" x="8" y="81" width="398" height="72"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uL-lQ-Isf">
-                                                    <rect key="frame" x="309" y="200" width="97" height="34"/>
+                                                    <rect key="frame" x="8" y="200" width="120" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -85,38 +85,28 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="w7E-Kt-yKK"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pw8-XO-VOP">
-                                <rect key="frame" x="8" y="0.0" width="394" height="44"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="MyTechNews" id="Zp0-9g-LSc">
-                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="EyE-Co-8Pf">
-                                            <connections>
-                                                <action selector="menuButtonPressed:" destination="BYZ-38-t0r" id="gSd-1V-EJw"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VHI-Db-dtC" secondAttribute="trailing" id="bit-AL-sxs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pw8-XO-VOP" secondAttribute="trailing" constant="-8" id="hGq-oG-kl4"/>
-                            <constraint firstItem="pw8-XO-VOP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="iKe-gu-oLk"/>
                             <constraint firstItem="VHI-Db-dtC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q6m-fD-DkV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VHI-Db-dtC" secondAttribute="bottom" id="st6-h8-Xmu"/>
-                            <constraint firstItem="VHI-Db-dtC" firstAttribute="top" secondItem="pw8-XO-VOP" secondAttribute="bottom" id="zgB-iO-9Yf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HlR-az-qX1"/>
+                    <navigationItem key="navigationItem" title="MyTechNews" id="HlR-az-qX1">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Kgz-XT-EzP">
+                            <connections>
+                                <action selector="menuButtonPressed:" destination="BYZ-38-t0r" id="oEY-cv-cjP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="VHI-Db-dtC" id="Bj4-qp-ndg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.753623188406" y="111.68478260869566"/>
+            <point key="canvasLocation" x="2765.217391304348" y="120.65217391304348"/>
         </scene>
         <!--Web View View Controller-->
         <scene sceneID="0Wy-Hu-hPu">
@@ -168,7 +158,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jmo-SV-fOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2042.0289855072465" y="111.68478260869566"/>
+            <point key="canvasLocation" x="3856.521739130435" y="111.68478260869566"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="REV-In-qrb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oSZ-gS-obJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d4M-Cs-GA8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R3j-kc-YHX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgd-gT-kDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857.9710144927537" y="120.65217391304348"/>
         </scene>
     </scenes>
 </document>
