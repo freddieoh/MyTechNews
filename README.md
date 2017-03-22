@@ -7,7 +7,7 @@ Customized news feed aggregator with a focus on tech. User interface designed to
 
 
 
-#LICENSE
+# LICENSE
 LICENSE
 
 The MIT License (MIT)
