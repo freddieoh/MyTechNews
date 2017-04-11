@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-  
+
   @IBOutlet weak var tableView: UITableView!
   
   var articles: [Article]? = []
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     fetchArticles(fromSource: source)
+    
   }
   
   func fetchArticles(fromSource provider: String) {
@@ -98,16 +99,18 @@ extension ViewController: UITableViewDataSource {
 extension UIImageView {
   
   func downloadImage(from url: String) {
-    let url = URLRequest(url: URL(string: url)!)
-    let task = URLSession.shared.dataTask(with: url) { (data,respone,error) in
-      if error != nil {
-        print(error.debugDescription)
-        return
+    DispatchQueue.main.async {
+      let url = URLRequest(url: URL(string: url)!)
+      let task = URLSession.shared.dataTask(with: url) { (data,respone,error) in
+        if error != nil {
+          print(error.debugDescription)
+          return
+        }
+        DispatchQueue.main.sync {
+          self.image = UIImage(data: data!)
+        }
       }
-      DispatchQueue.main.async {
-        self.image = UIImage(data: data!)
-      }
+      task.resume()
     }
-    task.resume()
   }
 }

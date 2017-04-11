@@ -70,10 +70,7 @@
 				1F11AE961E48F649001D161A /* Views */,
 				1F11AE951E48F642001D161A /* Controllers */,
 				1F11AE941E48F636001D161A /* Storyboards */,
-				1F11AE821E48F4FB001D161A /* AppDelegate.swift */,
-				1F11AE891E48F4FB001D161A /* Assets.xcassets */,
-				1F11AE8B1E48F4FB001D161A /* LaunchScreen.storyboard */,
-				1F11AE8E1E48F4FB001D161A /* Info.plist */,
+				1FE32FC71E7CD10400CD7A50 /* Supporting Files */,
 			);
 			path = MyTechNews;
 			sourceTree = "<group>";
@@ -112,6 +109,17 @@
 				1F25F6871E4E9CE700E28F59 /* MenuManager.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		1FE32FC71E7CD10400CD7A50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F11AE821E48F4FB001D161A /* AppDelegate.swift */,
+				1F11AE891E48F4FB001D161A /* Assets.xcassets */,
+				1F11AE8B1E48F4FB001D161A /* LaunchScreen.storyboard */,
+				1F11AE8E1E48F4FB001D161A /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
