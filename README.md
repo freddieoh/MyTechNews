@@ -1,4 +1,4 @@
-# MyTechNews
+# Techie
 Customized news feed aggregator with a focus on tech. User interface designed to get all tech news quickly and efficiently using the News API
 
 
