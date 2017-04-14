@@ -99,7 +99,7 @@ extension ViewController: UITableViewDataSource {
 extension UIImageView {
   
   func downloadImage(from url: String) {
-    DispatchQueue.main.async {
+    DispatchQueue.global().async {
       let url = URLRequest(url: URL(string: url)!)
       let task = URLSession.shared.dataTask(with: url) { (data,respone,error) in
         if error != nil {

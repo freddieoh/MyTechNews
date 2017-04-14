@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MyTechNews-->
+        <!--Techie-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyTechNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="242"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o0q-Qs-l5e" id="S4F-vg-rQM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="241.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8yV-9f-rvi">
@@ -95,7 +95,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VHI-Db-dtC" secondAttribute="bottom" id="st6-h8-Xmu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MyTechNews" id="HlR-az-qX1">
+                    <navigationItem key="navigationItem" title="Techie" id="HlR-az-qX1">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="Kgz-XT-EzP">
                             <connections>
                                 <action selector="menuButtonPressed:" destination="BYZ-38-t0r" id="oEY-cv-cjP"/>
