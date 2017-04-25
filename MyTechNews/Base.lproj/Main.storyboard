@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oSZ-gS-obJ">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oSZ-gS-obJ">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,27 +13,24 @@
         <!--Techie-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyTechNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Techie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="242" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VHI-Db-dtC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="242" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VHI-Db-dtC">
+                                <rect key="frame" x="0.0" y="-8" width="375" height="675"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="736" id="CdJ-bH-2rb"/>
-                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" rowHeight="242" id="o0q-Qs-l5e" customClass="ArticleCell" customModule="MyTechNews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="242"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" rowHeight="242" id="o0q-Qs-l5e" customClass="ArticleCell" customModule="Techie" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="242"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o0q-Qs-l5e" id="S4F-vg-rQM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="241.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="242"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8yV-9f-rvi">
@@ -43,24 +40,27 @@
                                                         <constraint firstAttribute="height" constant="234" id="Vec-HW-JxR"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is where the TITLE of the article will go" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zId-fV-qyY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the TITLE of the article will go" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zId-fV-qyY">
                                                     <rect key="frame" x="8" y="8" width="398" height="70"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="0Gx-5G-wCV"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-gA-VmT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-gA-VmT">
                                                     <rect key="frame" x="8" y="81" width="398" height="72"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uL-lQ-Isf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uL-lQ-Isf">
                                                     <rect key="frame" x="8" y="200" width="183" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="183" id="DVN-Ou-Qp3"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -68,9 +68,19 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="8yV-9f-rvi" firstAttribute="top" secondItem="S4F-vg-rQM" secondAttribute="top" id="2Vy-CQ-FbZ"/>
+                                                <constraint firstItem="9uL-lQ-Isf" firstAttribute="leading" secondItem="Q3e-gA-VmT" secondAttribute="leading" id="3hG-QP-zmO"/>
+                                                <constraint firstItem="zId-fV-qyY" firstAttribute="top" secondItem="S4F-vg-rQM" secondAttribute="topMargin" id="49a-zH-oQs"/>
+                                                <constraint firstItem="9uL-lQ-Isf" firstAttribute="bottom" secondItem="8yV-9f-rvi" secondAttribute="bottom" id="5mX-dc-Sw7"/>
                                                 <constraint firstItem="8yV-9f-rvi" firstAttribute="leading" secondItem="S4F-vg-rQM" secondAttribute="leading" id="BQK-KJ-FQW"/>
+                                                <constraint firstItem="8yV-9f-rvi" firstAttribute="centerX" secondItem="Q3e-gA-VmT" secondAttribute="centerX" id="IHK-vv-hSe"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="8yV-9f-rvi" secondAttribute="bottom" constant="-1" id="Oas-cY-HxQ"/>
-                                                <constraint firstAttribute="trailing" secondItem="8yV-9f-rvi" secondAttribute="trailing" id="chd-RY-eap"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8yV-9f-rvi" secondAttribute="trailing" constant="-47" id="V9h-9o-ueD"/>
+                                                <constraint firstItem="zId-fV-qyY" firstAttribute="leading" secondItem="Q3e-gA-VmT" secondAttribute="leading" id="WRr-HE-wPP"/>
+                                                <constraint firstItem="zId-fV-qyY" firstAttribute="leading" secondItem="S4F-vg-rQM" secondAttribute="leadingMargin" id="bcE-iQ-beN"/>
+                                                <constraint firstItem="8yV-9f-rvi" firstAttribute="centerY" secondItem="Q3e-gA-VmT" secondAttribute="centerY" id="gDE-rq-dmv"/>
+                                                <constraint firstItem="9uL-lQ-Isf" firstAttribute="top" secondItem="Q3e-gA-VmT" secondAttribute="bottom" constant="47" id="iVr-ah-J4O"/>
+                                                <constraint firstItem="Q3e-gA-VmT" firstAttribute="top" secondItem="zId-fV-qyY" secondAttribute="bottom" constant="3" id="mgF-16-jZX"/>
+                                                <constraint firstItem="8yV-9f-rvi" firstAttribute="centerX" secondItem="zId-fV-qyY" secondAttribute="centerX" id="y2g-eg-9gh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -90,9 +100,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VHI-Db-dtC" secondAttribute="trailing" id="bit-AL-sxs"/>
-                            <constraint firstItem="VHI-Db-dtC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q6m-fD-DkV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VHI-Db-dtC" secondAttribute="bottom" id="st6-h8-Xmu"/>
+                            <constraint firstItem="VHI-Db-dtC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-8" id="8dI-NE-t3B"/>
+                            <constraint firstItem="VHI-Db-dtC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kEh-9e-5QT"/>
+                            <constraint firstItem="VHI-Db-dtC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="mV4-6G-gnT"/>
+                            <constraint firstAttribute="trailing" secondItem="VHI-Db-dtC" secondAttribute="trailing" id="q5z-l0-ygA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Techie" id="HlR-az-qX1">
@@ -108,22 +119,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2765.217391304348" y="120.65217391304348"/>
+            <point key="canvasLocation" x="2764" y="120.08995502248877"/>
         </scene>
         <!--Web View View Controller-->
         <scene sceneID="0Wy-Hu-hPu">
             <objects>
-                <viewController storyboardIdentifier="web" id="0kK-kY-0ht" customClass="WebViewViewController" customModule="MyTechNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="web" id="0kK-kY-0ht" customClass="WebViewViewController" customModule="Techie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3fO-43-JAo"/>
                         <viewControllerLayoutGuide type="bottom" id="xVA-2a-Itm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S7C-7O-pjI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-UJ-SkL">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="-5" width="414" height="672"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="IQ3-Gy-w17"/>
@@ -131,10 +142,10 @@
                                 </constraints>
                             </webView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ll-yy-bxn">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="-49" width="414" height="44"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="MyTechNews" id="gXM-Cl-3sV">
+                                    <navigationItem title="Techie" id="gXM-Cl-3sV">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="rOL-TU-m2V">
                                             <connections>
                                                 <action selector="backButtonPressed:" destination="0kK-kY-0ht" id="WKf-Bc-oYg"/>
@@ -179,35 +190,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgd-gT-kDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857.9710144927537" y="120.65217391304348"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qDj-EO-CCW">
-            <objects>
-                <viewController id="nXV-Gb-Uow" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kkt-yj-1rM"/>
-                        <viewControllerLayoutGuide type="bottom" id="IE0-7x-cb9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cr4-PA-UVH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-Xc-Bdk">
-                                <rect key="frame" x="136" y="444" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get My News"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="biO-ac-2Ta">
-                                <rect key="frame" x="87" y="82" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lvj-l2-cBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2144.927536231884" y="764.67391304347836"/>
         </scene>
     </scenes>
 </document>

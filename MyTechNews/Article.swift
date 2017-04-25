@@ -1,6 +1,6 @@
 //
 //  Article.swift
-//  MyTechNews
+//  Techie
 //
 //  Created by Fredrick Ohen on 2/6/17.
 //  Copyright © 2017 geeoku. All rights reserved.

@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F11AE7F1E48F4FB001D161A /* MyTechNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTechNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F11AE7F1E48F4FB001D161A /* Techie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F11AE821E48F4FB001D161A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F11AE841E48F4FB001D161A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F11AE871E48F4FB001D161A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		1F11AE761E48F4FB001D161A = {
 			isa = PBXGroup;
 			children = (
-				1F11AE811E48F4FB001D161A /* MyTechNews */,
+				1F11AE811E48F4FB001D161A /* Techie */,
 				1F11AE801E48F4FB001D161A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		1F11AE801E48F4FB001D161A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F11AE7F1E48F4FB001D161A /* MyTechNews.app */,
+				1F11AE7F1E48F4FB001D161A /* Techie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F11AE811E48F4FB001D161A /* MyTechNews */ = {
+		1F11AE811E48F4FB001D161A /* Techie */ = {
 			isa = PBXGroup;
 			children = (
 				1F11AE971E48F64F001D161A /* Models */,
@@ -72,6 +72,7 @@
 				1F11AE941E48F636001D161A /* Storyboards */,
 				1FE32FC71E7CD10400CD7A50 /* Supporting Files */,
 			);
+			name = Techie;
 			path = MyTechNews;
 			sourceTree = "<group>";
 		};
@@ -125,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F11AE7E1E48F4FB001D161A /* MyTechNews */ = {
+		1F11AE7E1E48F4FB001D161A /* Techie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F11AE911E48F4FB001D161A /* Build configuration list for PBXNativeTarget "MyTechNews" */;
+			buildConfigurationList = 1F11AE911E48F4FB001D161A /* Build configuration list for PBXNativeTarget "Techie" */;
 			buildPhases = (
 				1F11AE7B1E48F4FB001D161A /* Sources */,
 				1F11AE7C1E48F4FB001D161A /* Frameworks */,
@@ -137,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = MyTechNews;
+			name = Techie;
 			productName = MyTechNews;
-			productReference = 1F11AE7F1E48F4FB001D161A /* MyTechNews.app */;
+			productReference = 1F11AE7F1E48F4FB001D161A /* Techie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1F11AE7A1E48F4FB001D161A /* Build configuration list for PBXProject "MyTechNews" */;
+			buildConfigurationList = 1F11AE7A1E48F4FB001D161A /* Build configuration list for PBXProject "Techie" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -172,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F11AE7E1E48F4FB001D161A /* MyTechNews */,
+				1F11AE7E1E48F4FB001D161A /* Techie */,
 			);
 		};
 /* End PBXProject section */
@@ -326,7 +327,7 @@
 				DEVELOPMENT_TEAM = 7E646DTM59;
 				INFOPLIST_FILE = MyTechNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.geeoku.MyTechNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geeoku.Techie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -339,7 +340,7 @@
 				DEVELOPMENT_TEAM = 7E646DTM59;
 				INFOPLIST_FILE = MyTechNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.geeoku.MyTechNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geeoku.Techie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -348,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F11AE7A1E48F4FB001D161A /* Build configuration list for PBXProject "MyTechNews" */ = {
+		1F11AE7A1E48F4FB001D161A /* Build configuration list for PBXProject "Techie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F11AE8F1E48F4FB001D161A /* Debug */,
@@ -357,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F11AE911E48F4FB001D161A /* Build configuration list for PBXNativeTarget "MyTechNews" */ = {
+		1F11AE911E48F4FB001D161A /* Build configuration list for PBXNativeTarget "Techie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F11AE921E48F4FB001D161A /* Debug */,
