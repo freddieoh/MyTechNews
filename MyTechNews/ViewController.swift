@@ -15,13 +15,14 @@ class ViewController: UIViewController {
   var articles: [Article]? = []
   var source = "techcrunch"
   
+  // Image URL
+  var image = Article()
   let menuManager = MenuManager()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     fetchArticles(fromSource: source)
-    
   }
   
   func fetchArticles(fromSource provider: String) {
@@ -69,7 +70,7 @@ extension ViewController: UITableViewDataSource {
     cell.articleTitleLabel.text = self.articles?[indexPath.row].headline
     cell.articleDescriptionLabel.text = self.articles?[indexPath.row].desc
     cell.articleAuthorLabel.text = self.articles?[indexPath.row].author
-    cell.articleImageView?.downloadImage(from: (self.articles?[indexPath.row].imageURL!)!)
+    cell.articleImageView.sd_setImage(with: URL(string: (self.articles?[indexPath.row].imageURL)!)!)
     
     return cell
   }

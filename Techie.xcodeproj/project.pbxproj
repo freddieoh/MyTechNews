@@ -35,6 +35,7 @@
 		1F25F6871E4E9CE700E28F59 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		1F47A9FE1E522BD80005505C /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BaseCell.xib; path = ../BaseCell.xib; sourceTree = "<group>"; };
 		1F47AA001E5236470005505C /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewCell.swift; path = ../BaseViewCell.swift; sourceTree = "<group>"; };
+		1F7743B71EB26DA10010BF98 /* Techie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Techie-Bridging-Header.h"; sourceTree = "<group>"; };
 		75D84D5A4E591428969D2F5F /* Pods-Techie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Techie/Pods-Techie.debug.xcconfig"; sourceTree = "<group>"; };
 		B80D092187C1D83FA37E4B59 /* Pods_Techie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB665806346A0901EF18F7B5 /* Pods-Techie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Techie/Pods-Techie.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 			children = (
 				1F11AE841E48F4FB001D161A /* ViewController.swift */,
 				1F25F6851E4E844000E28F59 /* WebViewViewController.swift */,
+				1F7743B71EB26DA10010BF98 /* Techie-Bridging-Header.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +185,7 @@
 					1F11AE7E1E48F4FB001D161A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7E646DTM59;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -400,11 +403,14 @@
 			baseConfigurationReference = 75D84D5A4E591428969D2F5F /* Pods-Techie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7E646DTM59;
 				INFOPLIST_FILE = MyTechNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geeoku.Techie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTechNews/Techie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -414,11 +420,13 @@
 			baseConfigurationReference = CB665806346A0901EF18F7B5 /* Pods-Techie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7E646DTM59;
 				INFOPLIST_FILE = MyTechNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geeoku.Techie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTechNews/Techie-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
