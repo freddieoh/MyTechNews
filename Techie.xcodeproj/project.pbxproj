@@ -18,6 +18,7 @@
 		1F25F6881E4E9CE700E28F59 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25F6871E4E9CE700E28F59 /* MenuManager.swift */; };
 		1F47A9FF1E522BD80005505C /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F47A9FE1E522BD80005505C /* BaseCell.xib */; };
 		1F47AA011E5236470005505C /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F47AA001E5236470005505C /* BaseViewCell.swift */; };
+		5DB1A8BC36B3ECA244241B91 /* Pods_Techie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80D092187C1D83FA37E4B59 /* Pods_Techie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		1F25F6871E4E9CE700E28F59 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		1F47A9FE1E522BD80005505C /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BaseCell.xib; path = ../BaseCell.xib; sourceTree = "<group>"; };
 		1F47AA001E5236470005505C /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewCell.swift; path = ../BaseViewCell.swift; sourceTree = "<group>"; };
+		75D84D5A4E591428969D2F5F /* Pods-Techie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Techie/Pods-Techie.debug.xcconfig"; sourceTree = "<group>"; };
+		B80D092187C1D83FA37E4B59 /* Pods_Techie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB665806346A0901EF18F7B5 /* Pods-Techie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Techie/Pods-Techie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB1A8BC36B3ECA244241B91 /* Pods_Techie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				1F11AE811E48F4FB001D161A /* Techie */,
 				1F11AE801E48F4FB001D161A /* Products */,
+				D98E7743812118791E762633 /* Pods */,
+				6212BC5795EDAE00ECD8E04D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +130,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6212BC5795EDAE00ECD8E04D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B80D092187C1D83FA37E4B59 /* Pods_Techie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98E7743812118791E762633 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D84D5A4E591428969D2F5F /* Pods-Techie.debug.xcconfig */,
+				CB665806346A0901EF18F7B5 /* Pods-Techie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F11AE911E48F4FB001D161A /* Build configuration list for PBXNativeTarget "Techie" */;
 			buildPhases = (
+				50BF85AD9BBE6080E0E5475B /* [CP] Check Pods Manifest.lock */,
 				1F11AE7B1E48F4FB001D161A /* Sources */,
 				1F11AE7C1E48F4FB001D161A /* Frameworks */,
 				1F11AE7D1E48F4FB001D161A /* Resources */,
+				8A2C8C480ACFCACD5312A262 /* [CP] Embed Pods Frameworks */,
+				25414D7930C01B973943A264 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25414D7930C01B973943A264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Techie/Pods-Techie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50BF85AD9BBE6080E0E5475B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A2C8C480ACFCACD5312A262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Techie/Pods-Techie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F11AE7B1E48F4FB001D161A /* Sources */ = {
@@ -322,6 +397,7 @@
 		};
 		1F11AE921E48F4FB001D161A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D84D5A4E591428969D2F5F /* Pods-Techie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7E646DTM59;
@@ -335,6 +411,7 @@
 		};
 		1F11AE931E48F4FB001D161A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB665806346A0901EF18F7B5 /* Pods-Techie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7E646DTM59;

@@ -134,15 +134,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-UJ-SkL">
-                                <rect key="frame" x="0.0" y="-5" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="-5" width="375" height="672"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="IQ3-Gy-w17"/>
                                     <constraint firstAttribute="height" constant="672" id="beS-yE-z0K"/>
                                 </constraints>
                             </webView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ll-yy-bxn">
-                                <rect key="frame" x="0.0" y="-49" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="-49" width="375" height="44"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Techie" id="gXM-Cl-3sV">
