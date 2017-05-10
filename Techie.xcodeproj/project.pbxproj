@@ -11,13 +11,13 @@
 		1F11AE851E48F4FB001D161A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11AE841E48F4FB001D161A /* ViewController.swift */; };
 		1F11AE881E48F4FB001D161A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11AE861E48F4FB001D161A /* Main.storyboard */; };
 		1F11AE8A1E48F4FB001D161A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F11AE891E48F4FB001D161A /* Assets.xcassets */; };
-		1F11AE8D1E48F4FB001D161A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11AE8B1E48F4FB001D161A /* LaunchScreen.storyboard */; };
 		1F11AE991E48FB22001D161A /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11AE981E48FB22001D161A /* ArticleCell.swift */; };
 		1F11AE9B1E48FC5D001D161A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11AE9A1E48FC5D001D161A /* Article.swift */; };
 		1F25F6861E4E844000E28F59 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25F6851E4E844000E28F59 /* WebViewViewController.swift */; };
 		1F25F6881E4E9CE700E28F59 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25F6871E4E9CE700E28F59 /* MenuManager.swift */; };
 		1F47A9FF1E522BD80005505C /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F47A9FE1E522BD80005505C /* BaseCell.xib */; };
 		1F47AA011E5236470005505C /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F47AA001E5236470005505C /* BaseViewCell.swift */; };
+		1F7743BF1EB441FB0010BF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7743BE1EB441FB0010BF98 /* LaunchScreen.storyboard */; };
 		5DB1A8BC36B3ECA244241B91 /* Pods_Techie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80D092187C1D83FA37E4B59 /* Pods_Techie.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,6 @@
 		1F11AE841E48F4FB001D161A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F11AE871E48F4FB001D161A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F11AE891E48F4FB001D161A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F11AE8C1E48F4FB001D161A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F11AE8E1E48F4FB001D161A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F11AE981E48FB22001D161A /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		1F11AE9A1E48FC5D001D161A /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		1F47A9FE1E522BD80005505C /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BaseCell.xib; path = ../BaseCell.xib; sourceTree = "<group>"; };
 		1F47AA001E5236470005505C /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewCell.swift; path = ../BaseViewCell.swift; sourceTree = "<group>"; };
 		1F7743B71EB26DA10010BF98 /* Techie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Techie-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F7743BE1EB441FB0010BF98 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75D84D5A4E591428969D2F5F /* Pods-Techie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Techie/Pods-Techie.debug.xcconfig"; sourceTree = "<group>"; };
 		B80D092187C1D83FA37E4B59 /* Pods_Techie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB665806346A0901EF18F7B5 /* Pods-Techie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Techie/Pods-Techie.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 			children = (
 				1F11AE821E48F4FB001D161A /* AppDelegate.swift */,
 				1F11AE891E48F4FB001D161A /* Assets.xcassets */,
-				1F11AE8B1E48F4FB001D161A /* LaunchScreen.storyboard */,
 				1F11AE8E1E48F4FB001D161A /* Info.plist */,
+				1F7743BE1EB441FB0010BF98 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,8 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F47A9FF1E522BD80005505C /* BaseCell.xib in Resources */,
-				1F11AE8D1E48F4FB001D161A /* LaunchScreen.storyboard in Resources */,
 				1F11AE8A1E48F4FB001D161A /* Assets.xcassets in Resources */,
+				1F7743BF1EB441FB0010BF98 /* LaunchScreen.storyboard in Resources */,
 				1F11AE881E48F4FB001D161A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,14 +294,6 @@
 				1F11AE871E48F4FB001D161A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1F11AE8B1E48F4FB001D161A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F11AE8C1E48F4FB001D161A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
