@@ -67,14 +67,18 @@ extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath) as! ArticleCell
+    
     cell.articleTitleLabel.text = self.articles?[indexPath.row].headline
     cell.articleDescriptionLabel.text = self.articles?[indexPath.row].desc
     cell.articleAuthorLabel.text = self.articles?[indexPath.row].author
-    cell.articleImageView.sd_setImage(with: URL(string: (self.articles?[indexPath.row].imageURL)!)!)
-    
+    if let imageURL = articles?[indexPath.row].imageURL {
+      cell.articleImageView.sd_setImage(with: URL(string: imageURL))
+    } else {
+      cell.articleImageView.image = nil
+    }
     return cell
   }
-  
+
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
@@ -98,7 +102,6 @@ extension ViewController: UITableViewDataSource {
 // MARK: UIImageView
 
 extension UIImageView {
-  
   func downloadImage(from url: String) {
     DispatchQueue.global().async {
       let url = URLRequest(url: URL(string: url)!)
