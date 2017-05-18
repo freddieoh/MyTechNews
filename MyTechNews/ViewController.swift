@@ -14,6 +14,8 @@ class ViewController: UIViewController {
   
   var articles: [Article]? = []
   var source = "techcrunch"
+  var secondSource = "techradar"
+  var thirdSource = "engadget"
   
   // Image URL
   var image = Article()
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     fetchArticles(fromSource: source)
+
   }
   
   func fetchArticles(fromSource provider: String) {
