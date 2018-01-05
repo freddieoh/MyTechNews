@@ -37,7 +37,7 @@ class MenuManager: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
   }
   
-  public func dismissMenu() {
+  @objc public func dismissMenu() {
     UIView.animate(withDuration: 0.5) {
       
       self.blackView.alpha = 0

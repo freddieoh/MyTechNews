@@ -39,7 +39,11 @@ class ViewController: UIViewController {
         if let articlesFromJSON = json?["articles"] as? [[String:Any]] {
           for articles in articlesFromJSON {
             let article = Article()
-            if let title = articles["title"] as? String, let author = articles["author"] as? String, let desc = articles["description"] as? String, let url = articles["url"] as? String, let urlToImage = articles["urlToImage"] as? String {
+            if let title = articles["title"] as? String,
+              let author = articles["author"] as? String,
+              let desc = articles["description"] as? String,
+              let url = articles["url"] as? String,
+              let urlToImage = articles["urlToImage"] as? String {
               article.author = author
               article.headline = title
               article.desc = desc
